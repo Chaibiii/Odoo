@@ -6,6 +6,7 @@ from odoo import api, fields, models
 
 class DeliveryAdresse(models.AbstractModel):
     _inherit = 'account.move'
+    descreption = 
 
     delivery_adress = fields.One2many('res.partner', string="Delivery Address", compute='_compute_address_type')
     name = fields.Char(string="name", required= True)
